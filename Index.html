@@ -1,0 +1,252 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sunrise Public School</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #fffdf9;
+      color: #333;
+    }
+    header {
+      background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('banner.jpg') no-repeat center center/cover;
+      color: white;
+      padding: 6rem 1rem;
+      text-align: center;
+    }
+    header h1 {
+      font-size: 3.5rem;
+      margin-bottom: 0.5rem;
+      animation: fadeInDown 1s ease-in-out;
+    }
+    header p {
+      font-size: 1.4rem;
+      animation: fadeInUp 1s ease-in-out;
+    }
+    nav {
+      background: #ff6f00;
+      padding: 1rem;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      flex-wrap: wrap;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1.1rem;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #ffe0b2;
+    }
+    section {
+      padding: 3rem 1.5rem;
+    }
+    .hero, .cta {
+      background: #fff3e0;
+      padding: 2rem;
+      text-align: center;
+      border-radius: 12px;
+      margin-bottom: 2rem;
+    }
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+    }
+    .card {
+      background: #fff;
+      padding: 1.5rem;
+      border-radius: 12px;
+      box-shadow: 0 8px 18px rgba(0,0,0,0.07);
+      transition: transform 0.3s ease;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+    }
+    .card img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+      border-radius: 8px;
+      margin-bottom: 1rem;
+    }
+    h2 {
+      text-align: center;
+      font-size: 2rem;
+      color: #ff6f00;
+      margin-bottom: 2rem;
+    }
+    footer {
+      background-color: #ff6f00;
+      color: white;
+      text-align: center;
+      padding: 1.5rem;
+      font-size: 0.95rem;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 10px;
+      margin-top: 2rem;
+    }
+    .gallery img {
+      width: 100%;
+      height: 140px;
+      object-fit: cover;
+      border-radius: 8px;
+      transition: transform 0.3s;
+    }
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+    iframe {
+      width: 100%;
+      max-width: 600px;
+      height: 300px;
+      border: none;
+      border-radius: 10px;
+      margin: auto;
+      display: block;
+    }
+    .features {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2rem;
+      margin-top: 3rem;
+    }
+    .feature {
+      background: #fff8ec;
+      padding: 1.5rem;
+      border-radius: 10px;
+      width: 260px;
+      text-align: center;
+      box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+    }
+    .feature h3 {
+      margin-bottom: 0.5rem;
+      color: #e65100;
+    }
+    .whatsapp-float {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      z-index: 100;
+    }
+    .whatsapp-float img {
+      width: 60px;
+      height: 60px;
+    }
+    form {
+      max-width: 600px;
+      margin: 2rem auto;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+    input, textarea, button {
+      padding: 0.8rem;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+      font-size: 1rem;
+    }
+    button {
+      background-color: #ff6f00;
+      color: white;
+      border: none;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+    button:hover {
+      background-color: #e65100;
+    }
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 2.5rem;
+      }
+      header p {
+        font-size: 1.2rem;
+      }
+      nav {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+    @keyframes fadeInDown {
+      0% {opacity: 0; transform: translateY(-30px);}
+      100% {opacity: 1; transform: translateY(0);}
+    }
+    @keyframes fadeInUp {
+      0% {opacity: 0; transform: translateY(30px);}
+      100% {opacity: 1; transform: translateY(0);}
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Sunrise Public School</h1>
+    <p>Empowering Students for a Brighter Tomorrow</p>
+  </header>  <nav>
+    <a href="#about">About</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#contact">Contact</a>
+  </nav>  <section id="about">
+    <div class="hero">
+      <h2>About Us</h2>
+      <p>We provide holistic education to help students succeed academically and socially in a dynamic world.</p>
+    </div><div class="features">
+  <div class="feature">
+    <h3>Smart Classes</h3>
+    <p>Interactive smart boards and digital learning tools to enhance classroom teaching.</p>
+  </div>
+  <div class="feature">
+    <h3>Sports Facilities</h3>
+    <p>Well-equipped grounds and trained coaches for physical development.</p>
+  </div>
+  <div class="feature">
+    <h3>Experienced Staff</h3>
+    <p>Highly qualified teachers dedicated to nurturing every student’s potential.</p>
+  </div>
+</div>
+
+  </section>  <section id="gallery">
+    <h2>Our Campus</h2>
+    <div class="gallery">
+      <img src="classroom.jpg" alt="Classroom" />
+      <img src="students.jpg" alt="Students Learning" />
+      <img src="campus.jpg" alt="Campus Front" />
+      <img src="library.jpg" alt="Library" />
+    </div>
+  </section>  <section class="cta">
+    <h2>Why Choose Us?</h2>
+    <p>Affordable fees, modern facilities, and a focus on both academic and personal growth make us the ideal choice.</p>
+  </section>  <section id="contact">
+    <h2>Contact Us</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <input type="text" placeholder="Phone Number" required />
+      <textarea rows="5" placeholder="Your Message"></textarea>
+      <button type="submit">Send Enquiry</button>
+
+  </section>  <footer>
+    &copy; 2025 Sunrise Public School. All rights reserved.
+  </footer>  <a href="https://wa.me/919999999999" class="whatsapp-float" target="_blank">
+    <img src="whatsapp.png" alt="WhatsApp Chat" />
+  </a>
+</body>
+</html>
